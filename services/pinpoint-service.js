@@ -1,6 +1,5 @@
 class PinpointService {
 
-
   static async get(applicationId) {
     const {
       CampaignsResponse: { Item: campaign },
