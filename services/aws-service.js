@@ -1,5 +1,4 @@
 const AWS = require("aws-sdk");
-
 class AwsService {
   static config() {
     const myConfig = new AWS.Config();
@@ -17,7 +16,6 @@ class AwsService {
     const credentials = new AWS.SharedIniFileCredentials({profile: profile});
     AWS.config.credentials = credentials
     AWS.config.update({region:'us-east-1'});
-
   }
 }
 
